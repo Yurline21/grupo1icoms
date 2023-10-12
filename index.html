@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/Style.css">
+    <script type="text/javascript" src="JavaScript.js"></script>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="menu container">
+            <br><br><br><br>
+            <a href="https://www.ecci.edu.co/bogota/" class="logo"><img style="width: 300px;"
+                    src="UNIVERSIDAD_ECCI.png"></a>
+            <br><br>
+            <input type="checkbox" id="menu" />
+        </div>
+        <div class="header-content container">
+            <div class="header-txt">
+                <h1>Multiplexación por división de tiempo <span>(TDM)</span></h1>
+                <p>
+                    La multiplexación por división de tiempo (TDM) es un método para transmitir múltiples señales
+                    digitales o analógicas a través de un solo canal. Para cada señal de transmisión entrante, TDM
+                    asigna intervalos de tiempo de transmisión. Los intervalos de tiempo se alternan entre todas las
+                    señales, lo que garantiza que la transmisión a través de un canal común sea exitosa para todas las
+                    señales participantes. TDM se puede emplear solo cuando la tasa de bits de la señal es inferior a la
+                    tasa de bits del medio de transmisión.
+                </p>
+                <div class="buttons">
+                    <p class="btn-1" onclick="MostrarIntInf(1)">Integrantes:</p>
+                    <p class="btn-1" onclick="MostrarIntInf(2)">Información:</p>
+                </div>
+                <br><br><br><br>
+            </div>
+            <section class="information-container">
+                <div class="Information-1" style="width: 1000px; height: 200px;">
+                    <div id="Integrantes">
+                        <center>
+                            <h3>Grupo 1</h3>
+                            <br>
+                            <p>
+                                1. Ceballos Pineda Karol Andrea - 121084<br>
+                                2. Ospina Reyes Juan Pablo - 121037<br>
+                                3. Salcedo Correa Yurline Dayrana - 123963<br>
+                            </p>
+                        </center>
+
+                    </div>
+                    <div id="informacion" style="display: none">
+                        <center>
+                            <p>
+                                Ana Rocío León<br>
+                                Infraestructura De Comunicaciones<br>
+                                Universidad ECCI<br>
+                                Bogotá, Cundinamarca<br>
+                                2023
+                            </p>
+                        </center>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </header>
+
+    <br><br>
+    <h2 style="display: flex; justify-content: center; align-items: center;">Objetivos:</h2>
+    <br><br><br><br>
+    <section class="information-container">
+        <div class="Information-1">
+            <p>
+                1. Comprender los conceptos fundamentales de la modulación y la multiplexación en la transmisión de
+                señales de información a través de medios físicos y sus diferentes mecanismos. Esto implica entender
+                cómo se transmiten múltiples señales a través de un canal compartido, lo que incluye la asignación de
+                intervalos de tiempo en TDM.
+            </p>
+        </div>
+        <div class="Information-1">
+            <p>
+                2. Entender el uso de la multiplexación por división de tiempo (TDM) explorando sus aplicaciones en
+                sistemas de comunicación digitales. Los objetivos incluyen conocer en qué contextos se utiliza TDM y
+                cómo se implementa en sistemas digitales.
+            </p>
+        </div>
+        <div class="Information-1">
+            <p>
+                3. Evaluar las ventajas y desventajas de la TDM en comparación con otras técnicas de multiplexación.
+                Esto implica analizar las fortalezas y debilidades de TDM en relación con otras técnicas, como la
+                multiplexación por división de frecuencia (FDM), para tomar decisiones informadas en aplicaciones
+                específicas.
+            </p>
+        </div>
+    </section>
+
+    <section class="about container">
+        <div class="about-img" style="display: flex; align-items: center; justify-content: center; gap: 30px;">
+            <img class="HoverOpc" style="width: 100px;" src="Academico.png" onclick="Mostrartxt(1)">
+            <img class="HoverOpc" style="width: 130px;" src="Biblioteca.png" onclick="Mostrartxt(2)">
+            <img class="HoverOpc" style="width: 100px;" src="pc.png" onclick="Mostrartxt(3)">
+        </div>
+        <div id="txt1" class="about-txt">
+            <span class="Intro">Información: </span>
+            <h2>Google Académico:</h2>
+            <p>
+                La multiplexación por división de tiempo (TDM) es una técnica que permite transmitir varias señales a
+                través de un único canal compartido. En TDM, se asignan intervalos de tiempo a cada señal de entrada,
+                alternándose de manera que todas las señales tengan la oportunidad de transmitirse. Esto asegura una
+                transmisión exitosa a través del canal común. TDM se utiliza cuando la velocidad de transmisión de las
+                señales es menor que la del medio de transmisión.
+            </p>
+            <a href="https://repositorio.utb.edu.co/handle/20.500.12585/1218" class="btn-1">Referencia: Villar Barón, J. G. del, Jiménez Navarro, D. M., & Ganem López, M. D.
+                (2009). TDM : Multiplexacion por división de tiempo. Universidad Tecnológica de Bolívar.
+            </a>
+        </div>
+
+        <div id="txt2" style="display: none;" class="about-txt">
+            <span class="Intro">Información: </span>
+
+            <h2>Libro Físico Biblioteca "ECCI":</h2>
+            <p>
+                "Comunicaciones y Redes" es un libro basado en una obra anterior de los mismos autores de 2013. Esta
+                nueva edición incluye dos nuevos capítulos sobre Redes Digitales de Transmisión de Datos y Señales
+                Isócronas, abordando las Redes de Área Local y los protocolos de Internet, en particular, la familia
+                TCP/IP. El libro se ha actualizado y se presenta de manera didáctica y accesible para su uso en cursos
+                de Ingeniería y carreras técnicas. Se han evitado desarrollos matemáticos complejos para facilitar la
+                comprensión de los sistemas de comunicaciones y se cubren temas actuales como el uso de fibras ópticas
+                en sistemas de multiplexación de alta capacidad.
+            </p>
+            <a href="https://biblioteca.ecci.edu.co/cgi-bin/koha/opac-detail.pl?biblionumber=16432&query_desc=%20multiplexaci%C3%B3n" class="btn-1">Referencia: Castro Lechtaler, A. R. (2015). Comunicaciones y redes: para
+                profesionales en sistemas de información. Alfa Omega.</a>
+        </div>
+
+        <div id="txt3" style="display: none;" class="about-txt">
+            <span class="Intro">Información: </span>
+            <h2>Biblioteca Virtual "ECCI":</h2>
+            <p>
+                En el contexto de las redes de computadoras, la multiplexación por división de tiempo (TDM) y otras
+                técnicas de multiplexación desempeñan un papel esencial para garantizar que múltiples usuarios puedan
+                compartir los recursos de la red de manera efectiva y, al mismo tiempo, acceder a servicios de Internet
+                y comunicación de manera fluida. El uso de TDM y otras formas de multiplexación ha sido fundamental para
+                manejar el crecimiento exponencial de la demanda de comunicación en las redes, especialmente durante la
+                popularización de Internet. Estas técnicas permiten la transmisión simultánea de datos de diferentes
+                fuentes a través de una conexión de red común, optimizando el uso de ancho de banda y recursos.
+            </p>
+            <a href="https://biblioteca.ecci.edu.co/cgi-bin/koha/opac-detail.pl?biblionumber=780&query_desc=andrew%20S" class="btn-1">Referencia: Tanenbaum, A. S. (1997). Redes de computadoras. Prentice Hall.
+            </a>
+        </div>
+    </section>
+
+    <main class="services container">
+        <h2>Caracteristicas:</h2>
+        <div class="services content">
+            <div class="Services-1" style="background-color: #252556;" onclick="MostrarServicios(1)">
+                <img src="image" alt="">
+                <h3>TDM Síncrona y TDM Asíncrona</h3>
+            </div>
+            <div id="serv1" class="Services-1" style="background-color: #323234; display: none">
+                <p>
+                    TDM se puede implementar de dos maneras diferentes. En la TDM Síncrona, se asigna un intervalo de
+                    tiempo fijo a cada señal, independientemente de si la señal tiene datos que transmitir. En cambio,
+                    en la TDM Asíncrona, los intervalos de tiempo se asignan dinámicamente a las señales según su
+                    demanda de transmisión, lo que permite un uso más eficiente del ancho de banda.
+
+                </p>
+
+            </div>
+            <div class="Services-1" style="background-color: #252556;" onclick="MostrarServicios(2)">
+                <img src="image" alt="">
+                <h3>Eficiencia en la Transmisión de Múltiples Señales</h3>
+            </div>
+            <div id="serv2" class="Services-1" style="background-color: #323234; display: none">
+                <p>
+                    Una de las ventajas fundamentales de TDM es su eficiencia para transmitir múltiples señales
+                    digitales sobre un solo medio de transmisión. Es especialmente útil en aplicaciones donde las
+                    señales se transmiten a una velocidad constante, como las redes telefónicas digitales.
+                </p>
+
+            </div>
+            <div class="Services-1" style="background-color: #252556;" onclick="MostrarServicios(3)">
+                <img src="image" alt="">
+                <h3>Desafíos con Tasas Variables y Prioridades</h3>
+            </div>
+            <div id="serv3" class="Services-1" style="background-color: #323234; display: none;">
+                <p>
+                    TDM puede enfrentar desafíos cuando las señales tienen tasas de datos variables o cuando algunas
+                    señales requieren prioridades más altas. La asignación de intervalos de tiempo fijos puede no ser
+                    óptima en tales casos.
+                </p>
+            </div>
+        </div>
+    </main>
+    </div>
+    <br>
+    <div style="display: flex; justify-content: center; align-items: center;">
+        <img src="Pregunta.PNG" alt="">
+    </div>
+    <p style="display: flex; justify-content: center; align-items: center; color: #687cef">Figura 1</p>
+    <div style="display: flex; justify-content: center; align-items: center;">
+        <p style="width: 90%;">
+            En la <span>figura 1 </span>siguiente se representa, esquematizada de forma muy simple, un conjunto
+            multiplexor-demultiplexor para ilustrar como se realiza la multiplexación-desmultiplexación por división
+            de tiempo.
+        </p>
+    </div>
+    <h2 style="display: flex; justify-content: center; align-items: center;">PREGUNTA:</h2>
+    <div style="display: flex; justify-content: center; align-items: center;">
+        <p align="center" style="width: 90%;">
+            ¿Cuál es uno de los objetivos principales de la multiplexación por división de tiempo<span>(TDM)</span>?
+        </p>
+    </div>
+
+
+    <div style="display: flex; justify-content: center; align-items: center; color: aliceblue;">
+        <form>
+            <input type="radio" id="opcion1" name="opciones" value="opcion1">
+            <label class="x" for="opcion1"><span>a.</span> Comprender los fundamentos de la energía y la potencia en las señales
+                de
+                comunicación.</label><br>
+
+            <input type="radio" id="opcion2" name="opciones" value="opcion2">
+            <label class="x" for="opcion2"><span>b.</span> Evaluar las ventajas y desventajas de la energía eléctrica en las
+                comunicaciones.
+            </label><br>
+
+            <input type="radio" id="opcion3" name="opciones" value="opcion3">
+            <label class="x" for="opcion3"><span>c.</span> Comprender la modulación en las señales de información.</label><br>
+
+            <input type="radio" id="opcion4" name="opciones" value="opcion4">
+            <label class="correct" for="opcion4"><span>d.</span> Transmitir múltiples señales de información de manera eficiente a
+                través de un canal
+                compartido.</label><br>
+        </form>
+    </div>
+
+    <br><br><br><br>
+    <footer class="footer" style="background-color: #12121c;">
+        <div class="header-txt">
+            <h1>Conclusiones</h1>
+            <p>
+                1. La multiplexación por división de tiempo (TDM) es una técnica importante en las comunicaciones que
+                permite transmitir múltiples señales a través de un canal compartido al asignar intervalos de tiempo a
+                cada señal.
+                <br><br>
+                2. La TDM puede ser síncrona, con intervalos de tiempo fijos, o asíncrona, asignando intervalos de
+                tiempo de manera dinámica según la demanda de transmisión.
+                <br><br>
+                3. A medida que las redes de computadoras y la popularización de Internet han crecido, la TDM ha
+                desempeñado un papel fundamental para satisfacer la creciente demanda de comunicación.
+                <br><br>
+                4. La TDM sigue siendo relevante en el campo de las comunicaciones y la tecnología de la información
+                debido a su capacidad para transmitir datos en tiempo real y su adaptabilidad a diversas aplicaciones.
+                <br><br>
+                5. Los estándares y normativas, como el estándar de tramas de 32 canales de TDM en Europa, son
+                importantes para garantizar la interoperabilidad y el funcionamiento eficiente de las redes que utilizan
+                esta técnica.
+                .
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
